@@ -5,16 +5,9 @@ export const CornyJokes = () => {
   const [buttonText, setButtonText] = useState("Have one");
 
   const fetchJokes = async () => {
-    const response = await fetch(
-      `${
-        process.env.NODE_ENV === "production"
-          ? "/api"
-          : "https://icanhazdadjoke.com"
-      }`,
-      {
-        headers: { Accept: "application/json" },
-      }
-    );
+    const response = await fetch("https://icanhazdadjoke.com", {
+      headers: { Accept: "application/json" },
+    });
 
     const joke = await response.json();
     setJokes(joke.joke);
