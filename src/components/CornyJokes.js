@@ -18,7 +18,7 @@ export const CornyJokes = () => {
       <p className="text-center text-xl md:text-2xl font-semibold text-teal-800 shade">
         Here are some corny dad jokes to make your day!
       </p>
-      <p className="text-center text-2xl overflow-y-scroll md:text-3xl font-bold text-indigo-700">
+      <p className="text-center text-2xl overflow-y-scroll md:overflow-y-hidden md:text-3xl font-bold text-indigo-700">
         {jokes}
       </p>
       <button
